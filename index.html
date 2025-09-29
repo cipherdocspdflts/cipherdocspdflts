@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherDocs PDF-LTS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">CipherDocs PDF-LTS</h1>
+            <p class="subtitle">Extract text from large PDF files directly in your browser</p>
+        </header>
+
+        <main class="main">
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📄</div>
+                    <h2>Upload PDF File</h2>
+                    <p>Click to select or drag and drop your PDF file here</p>
+                    <p class="file-info">No file size limits • Fully private • No internet required</p>
+                    <input type="file" id="fileInput" accept=".pdf" hidden>
+                    <button class="upload-btn" id="uploadBtn">Choose PDF File</button>
+                </div>
+            </div>
+
+            <div class="processing-section" id="processingSection" style="display: none;">
+                <div class="processing-indicator">
+                    <div class="spinner"></div>
+                    <p>Processing PDF...</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text" id="progressText">0%</p>
+                </div>
+            </div>
+
+            <div class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h2>Extracted Text</h2>
+                    <div class="results-actions">
+                        <button class="action-btn" id="copyBtn">Copy Text</button>
+                        <button class="action-btn" id="downloadBtn">Download as TXT</button>
+                        <button class="action-btn secondary" id="newFileBtn">Process New File</button>
+                    </div>
+                </div>
+                <div class="text-output" id="textOutput">
+                    <!-- Extracted text will appear here -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; CipherDocs PDF-LTS 2025</p>
+        </footer>
+    </div>
+
+    <script src="pdfjs/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
