@@ -12,40 +12,72 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="title">CipherDocs PDF-LTS</h1>
-            <p class="subtitle">Extract text from large PDF files directly in your browser</p>
+            <div class="logo-container">
+                <div class="logo-icon">🌙</div>
+                <h1 class="title">CipherDocs PDF-LTS</h1>
+            </div>
+            <p class="subtitle">Stealth-mode PDF text extraction • Privacy first • Zero footprint</p>
+            <div class="feature-badges">
+                <span class="badge">🔒 Zero Network</span>
+                <span class="badge">⚡ Lightning Fast</span>
+                <span class="badge">🎯 100MB+ Support</span>
+            </div>
         </header>
 
         <main class="main">
             <div class="upload-section" id="uploadSection">
                 <div class="upload-area" id="uploadArea">
                     <div class="upload-icon">📄</div>
-                    <h2>Upload PDF File</h2>
-                    <p>Click to select or drag and drop your PDF file here</p>
-                    <p class="file-info">No file size limits • Fully private • No internet required</p>
+                    <h2>Deploy PDF File</h2>
+                    <p>Drop your classified documents here for extraction</p>
+                    <div class="security-indicators">
+                        <span class="security-item">🛡️ Local Processing</span>
+                        <span class="security-item">🔐 Zero Transmission</span>
+                        <span class="security-item">⚡ Instant Results</span>
+                    </div>
                     <input type="file" id="fileInput" accept=".pdf" hidden>
-                    <button class="upload-btn" id="uploadBtn">Choose PDF File</button>
+                    <button class="upload-btn" id="uploadBtn">
+                        <span class="btn-icon">🚀</span>
+                        Initialize Extraction
+                    </button>
                 </div>
             </div>
 
             <div class="processing-section" id="processingSection" style="display: none;">
                 <div class="processing-indicator">
                     <div class="spinner"></div>
-                    <p>Processing PDF...</p>
+                    <p class="processing-title">🔍 Analyzing Document Structure</p>
+                    <p class="processing-subtitle">Extracting intelligence from PDF layers...</p>
                     <div class="progress-bar">
                         <div class="progress-fill" id="progressFill"></div>
                     </div>
                     <p class="progress-text" id="progressText">0%</p>
+                    <div class="processing-stats">
+                        <span class="stat">📊 Pages Scanned: <span id="pagesScanned">0</span></span>
+                        <span class="stat">⚡ Speed: Real-time</span>
+                    </div>
                 </div>
             </div>
 
             <div class="results-section" id="resultsSection" style="display: none;">
                 <div class="results-header">
-                    <h2>Extracted Text</h2>
+                    <div class="results-title">
+                        <h2>🎯 Intelligence Extracted</h2>
+                        <p class="extraction-status">✅ Mission Complete • Document Decoded</p>
+                    </div>
                     <div class="results-actions">
-                        <button class="action-btn" id="copyBtn">Copy Text</button>
-                        <button class="action-btn" id="downloadBtn">Download as TXT</button>
-                        <button class="action-btn secondary" id="newFileBtn">Process New File</button>
+                        <button class="action-btn primary" id="copyBtn">
+                            <span class="btn-icon">📋</span>
+                            Copy Intel
+                        </button>
+                        <button class="action-btn primary" id="downloadBtn">
+                            <span class="btn-icon">💾</span>
+                            Export TXT
+                        </button>
+                        <button class="action-btn secondary" id="newFileBtn">
+                            <span class="btn-icon">🔄</span>
+                            New Mission
+                        </button>
                     </div>
                 </div>
                 <div class="text-output" id="textOutput">
@@ -55,7 +87,11 @@
         </main>
 
         <footer class="footer">
-            <p>&copy; CipherDocs PDF-LTS 2025</p>
+            <div class="footer-content">
+                <p class="footer-text">🌙 Built for the shadows, optimized for speed</p>
+                <p class="footer-copyright">&copy; CipherDocs PDF-LTS 2025</p>
+                <p class="footer-tagline">No tracking • No uploads • No compromise</p>
+            </div>
         </footer>
     </div>
 
